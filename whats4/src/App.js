@@ -10,7 +10,7 @@ function App() {
     </div>
   );
 }
-
+//CSS 
 const MainContainer = styled.div`
   margin: 0;
   padding: 0;
@@ -34,16 +34,19 @@ const DivInputs = styled.div`
 
 `;
 
-const StyleInputUsuario = styled.input`
-  width: 10%;
-`;
+// const Array = [
+//   {saveTextoNomeUsuario},
+//   {saveMensagem}
+// ];
+
 
 class Formulario extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             textoNomeUsuario:"",
-            mensagem:""
+            mensagem:"",
+            // conversa: false
         };
     }
 
@@ -60,11 +63,20 @@ class Formulario extends React.Component {
     };
 
     enviar = (e) => {
-        console.log(this.state.textoNomeUsuario) //Teste Usuario
-        console.log(this.state.mensagem) //Teste Mensagem
+        const saveTextoNomeUsuario = this.state.textoNomeUsuario 
+        const saveMensagem = this.state.mensagem
         this.setState ({
           mensagem:""
-        });
+        });  
+        // console.log(saveTextoNomeUsuario) //Isso funciona
+        // console.log(saveMensagem) //Isso funciona
+        return ( //Não funciona - TESTE
+          <div>
+          <p> Abacaxi </p>
+          <p> Morango </p>
+          </div>
+          )
+        
     };
 
 render(){
