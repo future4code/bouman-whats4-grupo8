@@ -70,7 +70,7 @@ class Formulario extends React.Component {
         });  
         // console.log(saveTextoNomeUsuario) //Isso funciona
         // console.log(saveMensagem) //Isso funciona
-        return ( //Não funciona - TESTE
+        return ( //Não funciona 
           <div>
           <p> Abacaxi </p>
           <p> Morango </p>
